@@ -1,20 +1,35 @@
-// src/App.jsx
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header'; // Шинэ Header-г импортлох
-import HomePage from './pages/HomePage';
-import ProductsPage from './pages/ProductsPage';
+// src/App.jsx (ЗӨВ ХУВИЛБАР)
+
+import Header from './components/Header';
+import Hero from './components/Hero';
+import FeaturedBrands from './components/FeaturedBrands';
+import FilterBar from './components/FilterBar';
+import ProductList from './components/ProductList';
+import Sidebar from './components/Sidebar';
+
+// Зөвхөн өөрийнхөө CSS-г дуудна
+import './App.css';
 
 function App() {
+  // ... доторх код хэвээрээ ...
   return (
-    <BrowserRouter>
-      <Header /> {/* Header-г энд дуудсанаар бүх хуудсанд харагдана */}
-      <main className="content-wrap">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/products" element={<ProductsPage />} />
-        </Routes>
+    <div className="app-container">
+      <Header />
+      <main>
+        <Hero />
+        {/* ... */}
+      <FeaturedBrands/>
+      <div className="container">
+          <div className="catalog-section">
+            <Sidebar />
+            <div className="product-area">
+              <FilterBar />
+              <ProductList />
+            </div>
+          </div>
+        </div>
       </main>
-    </BrowserRouter>
+    </div>
   );
 }
 
