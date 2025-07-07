@@ -33,4 +33,5 @@ function App() {
   );
 }
 
+// Энэ бол тест хийж байгаа коммент
 export default App;
