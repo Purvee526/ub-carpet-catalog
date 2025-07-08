@@ -6,13 +6,7 @@ const FilterBar = () => {
     <div className="filter-bar">
       <div className="filter-bar-title">
         <h2>ХИВСНИЙ КАТАЛОГИ</h2>
-        <p>100% Монгол хонины ноосон хивс</p>
-      </div>
-      <div className="sort-options">
-        <button className="sort-button">
-          Загварын төрөл
-          <span className="sort-arrows">↑↓</span>
-        </button>
+        {/* <p>100% Монгол хонины ноосон хивс</p> */}
       </div>
     </div>
   );

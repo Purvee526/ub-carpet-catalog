@@ -2,7 +2,7 @@
 
 .filter-bar {
   display: flex;
-  justify-content: space-between; /* Элементүүдийг 2 тийш нь шахах */
+  justify-content: center; /* Элементүүдийг 2 тийш нь шахах */
   align-items: center; /* Босоо тэнхлэгт голлуулах */
   padding: 20px 0;
   border-bottom: 1px solid #e0e0e0; /* Доогуур нь зөөлөн зураас */
@@ -17,12 +17,12 @@
   text-align: left; /* Гарчгийг зүүн талд шахах */
 }
 
-.filter-bar-title p {
-  margin: 5px 0 0 0;
+/* .filter-bar-title p {
+  margin: 5px 0 0;
   font-size: 14px;
   color: #757575;
-  text-align: left; /* Дэд гарчгийг зүүн талд шахах */
-}
+  text-align: left; 
+} */
 
 .sort-button {
   display: flex;

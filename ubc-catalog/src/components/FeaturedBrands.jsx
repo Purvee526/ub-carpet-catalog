@@ -1,34 +1,26 @@
-// src/components/FeaturedBrands.jsx
-
 import React from 'react';
-import './FeaturedBrands.css'; // Энэ компонент-д зориулсан CSS файл
-
-// Брэндүүдийн жагсаалт
-const brands = [
-  'АЛТАНБУЛАГ',
-  'САРЫН БРЭНД',
-  'БОГД БРЭНД',
-  'АЛТАН ӨРГӨӨ',
-  'УЛААНБААТАР'
-];
+import './FeaturedBrands.css';
 
 const FeaturedBrands = () => {
   return (
-    <div className="featured-brands-section">
-      <div className="container">
-        <div className="brands-list">
-          {brands.map((brandName, index) => (
-            <button key={index} className="brand-chip">
-              {brandName}
-            </button>
-          ))}
-        </div>
-        <p className="brands-promo-text">
+<div className="promo-text-container">
+  <div className="ticker-wrap">
+    <div className="ticker-move">
+      <div className="ticker-item">
         Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.
-        </p>
+      </div>
+      <div className="ticker-item">
+        Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.
+      </div>
+      <div className="ticker-item">
+        Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.
+      </div>
+      <div className="ticker-item">
+        Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.
       </div>
     </div>
-  );
+  </div>
+</div>
+);
 };
-
 export default FeaturedBrands;

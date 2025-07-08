@@ -2,23 +2,21 @@
 
 import Header from './components/Header';
 import Hero from './components/Hero';
-import FeaturedBrands from './components/FeaturedBrands';
+import FeaturedBrands from './components/FeaturedBrands'; 
 import FilterBar from './components/FilterBar';
 import ProductList from './components/ProductList';
 import Sidebar from './components/Sidebar';
 
-// Зөвхөн өөрийнхөө CSS-г дуудна
 import './App.css';
 
 function App() {
-  // ... доторх код хэвээрээ ...
   return (
     <div className="app-container">
       <Header />
       <main>
         <Hero />
-        {/* ... */}
-      <FeaturedBrands/>
+      <FeaturedBrands /> 
+
       <div className="container">
           <div className="catalog-section">
             <Sidebar />
@@ -33,5 +31,4 @@ function App() {
   );
 }
 
-// Энэ бол тест хийж байгаа коммент
 export default App;
